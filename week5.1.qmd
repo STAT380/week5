@@ -1,0 +1,19 @@
+---
+title: "week5.1"
+format: ipynb
+editor: visual
+---
+
+Regression assumptions
+
+Linear regression makes several assumptions about the data, such as :
+
+Linearity of the data. The relationship between the predictor (x) and the outcome (y) is assumed to be linear. Normality of residuals. The residual errors are assumed to be normally distributed. Homogeneity of residuals variance. The residuals are assumed to have a constant variance (homoscedasticity) Independence of residuals error terms. You should check whether or not these assumptions hold true. Potential problems include:
+
+Non-linearity of the outcome - predictor relationships Heteroscedasticity: Non-constant variance of error terms. Presence of influential values in the data that can be: Outliers: extreme values in the outcome (y) variable High-leverage points: extreme values in the predictors (x) variable All these assumptions and potential problems can be checked by producing some diagnostic plots visualizing the residual errors.
+
+```{r}
+library(tidyverse)
+library(broom)
+theme_set(theme_classic())
+```
